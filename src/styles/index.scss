@@ -1,0 +1,159 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+.container{
+  padding: 15px; 
+}
+.conBox {
+  padding: 10px;
+}
+.formBox {
+  margin-bottom: 2px  ;
+}
+.el-button {
+  padding: 7px 10px;
+}
+
+.el-table__header th,
+.el-table__header tr {
+  background-color: #e6e6e6;
+  color: #333;
+  font-weight: normal;
+}
+// .el-table td,
+// .el-table th {
+//   padding: 8px 0;
+//   font-size: 12px;
+// }
+.el-dialog--center {
+  text-align: left;
+}
+.el-dialog__header {
+  padding: 10px 20px 0px;
+}
+.el-dialog--center .el-dialog__body {
+  text-align: initial;
+  padding: 15px 20px 15px;
+}
+.el-dialog__headerbtn {
+  top: 15px;
+}
+.iconP {
+  cursor: pointer;
+}
+.btn {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 12px;
+  line-height: 23px;
+  cursor: pointer;
+}
+.red_btn {
+  color: #e64c4c;
+  cursor: pointer;
+}
+.blue_btn {
+  color: #2580e8;
+  cursor: pointer;
+}
+.colorY {
+  color: #ffb350;
+}
+.colorB {
+  color: #4e9cf5;
+}
+.colorR {
+  color: #ef5656;
+}
+.bgY {
+  background: #ffb350;
+}
+.bgB {
+  background: #4e9cf5;
+}
+.secTitle {
+  padding-left: 15px;
+  position: relative;
+  height: 30px;
+  background: #f3f3f3;
+  line-height: 30px;
+  font-size:16px ;
+  span {
+    position: absolute;
+    display: inline-block;
+    height: 30px;
+    width: 4px;
+    background: #4e9cf5;
+    left: 0;
+    top: 0;
+  }
+}
+.app-btn-box {
+  display: flex;
+  justify-content: flex-end;
+}
